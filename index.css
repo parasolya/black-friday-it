@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --brand-color: #e50103;
+  --secondary-color: #ffd000;
+  --white-color: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--white-color);
+  background: linear-gradient(90deg, #001024, #002555, #001024);
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+header {
+  padding: 50px 0;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 90px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--white-color);
+  margin-left: 40px;
+}
+
+nav a:hover {
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+.hero {
+  background-image: url(./images/hero-gift.png);
+  background-repeat: no-repeat;
+  background-position: right 130px center;
+}
+
+h1 {
+  font-size: 116px;
+  text-transform: uppercase;
+  width: 430px;
+  font-weight: 900;
+  line-height: 90%;
+  margin: 0;
+}
+
+.hero-text {
+  width: 426px;
+  padding: 10px 27px 13px;
+  background: var(--brand-color);
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 8px;
+  margin-top: 24px;
+  margin-bottom: 37px;
+}
+
+.courses {
+  width: 580px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.courses a {
+ 
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-size: 27px;
+  width: 175px;
+  color: var(--white-color);
+  padding: 6px 0px 6px 45px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 140%;
+  user-select: none;
+}
+
+.courses a:not(:last-child) {
+  margin-bottom: 15px; 
+}
+
+.courses a:nth-child(1) {
+  background-image: url(./images/courses/frontend.svg);
+}
+
+.courses a:nth-child(2) {
+  background-image: url(./images/courses/pyton.svg);
+}
+.courses a:nth-child(3) {
+  background-image: url(./images/courses/qa.svg);
+}
+.courses a:nth-child(4) {
+  background-image: url(./images/courses/full-stack.svg);
+}
+.courses a:nth-child(5) {
+  background-image: url(./images/courses/c_sharp.svg);
+}
+.courses a:nth-child(7) {
+  background-image: url(./images/courses/java.svg);
+}
+
+.hidden {
+  visibility: hidden;
+}
