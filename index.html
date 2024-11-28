@@ -15,33 +15,199 @@
   <body>
     <header>
       <div class="container header-top">
-        <img src="./images/logo.svg" alt="logo">
+        <img src="./images/logo.svg" alt="logo" />
         <nav>
-          <a href="">Переваги роботи в IT</a>
-
-          <a href="">IT спеціальності</a>
-
-          <a href="">Отримати консультацію</a>
-
-          <a href="">Контакти</a>
+          <ul class="nav">
+            <li class="nav__item">
+              <a class="nav__link" href="#advantages">Переваги роботи в IT</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="">IT спеціальності</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="">Отримати консультацію</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="">Контакти</a>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
     <main>
-      <section class="hero">
+      <section class="section hero">
         <div class="container">
-          <h1>Black Friday</h1>
+          <h1 class="hero-title">Black Friday</h1>
           <p class="hero-text">
             Тиждень великих знижок на курси з топових IT професій
           </p>
-          <div class="courses">
-            <a href="">FrontEnd</a>
-            <a href="">Python</a>
-            <a href="">QA Manual</a>
-            <a href="">Full Stack </a>
-            <a href="">C#/.NET</a>
-            <a class="hidden" href="">Java</a>
-            <a href="">Java</a>
+
+          <ul class="courses">
+            <li class="courses__item">
+              <a class="courses__link" href="#">FrontEnd</a>
+            </li>
+            <li class="courses__item">
+              <a class="courses__link" href="#">Python</a>
+            </li>
+            <li class="courses__item">
+              <a class="courses__link" href="#">QA Manual</a>
+            </li>
+            <li class="courses__item">
+              <a class="courses__link" href="#">Full Stack</a>
+            </li>
+            <li class="courses__item">
+              <a class="courses__link" href="#">C#/.NET</a>
+            </li>
+            <li class="hidden courses__item">
+              <a class="courses__link" href="#"></a>
+            </li>
+            <li class="courses__item">
+              <a class="courses__link" href="#">Java</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="advantages" class="section advantages">
+        <div class="container">
+          <h2 class="title">Переваги роботи в IT</h2>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <div class="advantages__card">
+                <p class="advantages__name">Високий попит на спеціалістів</p>
+                <p class="advantages__text">
+                  Кожна сфера нашого життя сьогодні тісно пов’язана з ІТ, саме
+                  тому ІТ-фахівці дуже цінуються, а роботодавці забезпечують їх
+                  якомога кращими умовами праці
+                </p>
+              </div>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__card">
+                <p class="advantages__name">Високий рівень оплати праці</p>
+                <p class="advantages__text">
+                  Досвідчені айтішники дуже щедро оплачуються і мають достатньо
+                  коштів не тільки на закриття головних потреб, але й на
+                  втілення в життя своїх мрій
+                </p>
+              </div>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__card">
+                <p class="advantages__name">Міжнародна спеціальність</p>
+                <p class="advantages__text">
+                  ІТ-спеціалісти можуть працювати у будь-якій країні світу
+                  завдяки багатому багажеві затребуваних знань та навичок, а
+                  також гарній англійській мові
+                </p>
+              </div>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__card">
+                <p class="advantages__name">Віддалена робота</p>
+                <p class="advantages__text">
+                  Немає потреби щодня витрачати час на дорогу до офісу та назад
+                  – велика кількість віддалених вакансій вигідно вирізняє
+                  айтішників серед інших спеціалістів
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="specialty" class="section specialty">
+        <div class="container">
+          <h2 class="title">IT спеціальності</h2>
+          <ul class="specialty__list">
+            <li class="specialty__item">
+              <div class="specialty__card">
+                <p class="specialty__name">FrontEnd</p>
+                <p class="specialty__text"><span class="specialty__text--bold">Старт: 5 грудня</span></p>
+                <p class="specialty__text specialty__text--height">
+                  <span class="specialty__text--bold">Технології:</span> HTML & CSS, JavaScript, Git, TypeScript, Angular, React.</p>
+                <p class="specialty__text"><span class="specialty__text--bold">Тривалість:</span> 5 міс. / 124 год.</p>
+                
+              </div>
+              <button class="specialty__btn" type="button">Детальніше</button>
+            </li>
+            <li class="specialty__item">
+              <div class="specialty__card">
+                <p class="specialty__name">C#/.NET</p>
+                <p class="specialty__text"><span class="specialty__text--bold">Старт: 19 листопада</span></p>
+                <p class="specialty__text specialty__text--height">
+                  <span class="specialty__text--bold">Технології:</span> C#, Git, SQL, Entity Framework Core, ASP NET Core.</p>
+                <p class="specialty__text"><span class="specialty__text--bold">Тривалість:</span> 5.5 міс. / 138 год.</p>
+                
+              </div>
+              <button class="specialty__btn" type="button">Детальніше</button>
+            </li>
+            <li class="specialty__item">
+              <div class="specialty__card">
+                <p class="specialty__name">Java</p>
+                <p class="specialty__text"><span class="specialty__text--bold">Старт: 10 грудня</span></p>
+                <p class="specialty__text specialty__text--height">
+                  <span class="specialty__text--bold">Технології:</span> Java, Git, MySQL, JDBC, Hibernate, Web-services, Spring.</p>
+                <p class="specialty__text"><span class="specialty__text--bold">Тривалість:</span> 5 міс. / 128 год.</p>
+                
+              </div>
+              <button class="specialty__btn" type="button">Детальніше</button>
+            </li>
+            <li class="specialty__item">
+              <div class="specialty__card">
+                <p class="specialty__name">Python</p>
+                <p class="specialty__text"><span class="specialty__text--bold">Старт: 5 грудня</span></p>
+                <p class="specialty__text specialty__text--height">
+                  <span class="specialty__text--bold">Технології:</span> Git, PostgreSQL, Django</p>
+                <p class="specialty__text"><span class="specialty__text--bold">Тривалість:</span> 5.5 міс. / 110 год.</p>
+                
+              </div>
+              <button class="specialty__btn" type="button">Детальніше</button>
+            </li>
+            <li class="specialty__item">
+              <div class="specialty__card">
+                <p class="specialty__name">Full Stack</p>
+                <p class="specialty__text"><span class="specialty__text--bold">Старт: 5 грудня</span></p>
+                <p class="specialty__text specialty__text--height">
+                  <span class="specialty__text--bold">Технології:</span> HTML & CSS, JavaScript, Git, MySQL, Node.js</p>
+                <p class="specialty__text"><span class="specialty__text--bold">Тривалість:</span> 6 міс. / 146 год.</p>
+                
+              </div>
+              <button class="specialty__btn" type="button">Детальніше</button>
+            </li>
+            <li class="specialty__item">
+              <div class="specialty__card">
+                <p class="specialty__name">QA Manual</p>
+                <p class="specialty__text"><span class="specialty__text--bold">Старт: 10 грудня</span></p>
+                <p class="specialty__text specialty__text--height">
+                  <span class="specialty__text--bold">Технології:</span> Java, Git, MySQL, JDBC, Hibernate, Web-services, Spring.</p>
+                <p class="specialty__text"><span class="specialty__text--bold">Тривалість:</span> 3 міс. / 78 год.</p>
+                
+              </div>
+              <button class="specialty__btn" type="button">Детальніше</button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section specialty">
+        <div class="container">
+          <div class="card-container">
+            <div class="card">
+              <img
+                src="https://fadzrinmadu.github.io/hosted-assets/product-card-ui-design-using-html-and-css/img.png"
+                alt=""
+                class="card__img"
+              />
+
+              <div class="card__content">
+                <div class="card__data">
+                  <h1 class="card__title">Nike Air Jordan</h1>
+                  <span class="card__preci">$99</span>
+                  <p class="card__description">
+                    Nike Air Jordan Footwear basketball sneakers.
+                  </p>
+                  <a href="#" class="card__button">Buy Now</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
